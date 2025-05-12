@@ -38,9 +38,14 @@
     --radius: 0.75rem;
   }
 
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
   body {
     @apply bg-background text-foreground font-sans;
-    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
   }
   
   h1, h2, h3, h4 {
@@ -50,14 +55,14 @@
 
 @layer components {
   .section-padding {
-    @apply py-12 px-4 sm:py-16 sm:px-8 md:py-20 md:px-12 lg:px-16;
+    @apply py-8 px-4 sm:py-12 sm:px-6 md:py-16 md:px-8 lg:py-20 lg:px-16;
   }
   
   .btn-primary {
-    @apply bg-farm-burgundy text-white hover:bg-farm-brown transition-colors px-6 py-3 rounded-md font-medium;
+    @apply bg-farm-burgundy text-white hover:bg-farm-brown transition-colors px-4 py-2 md:px-6 md:py-3 rounded-md font-medium;
   }
   
   .btn-secondary {
-    @apply bg-farm-yellow text-farm-burgundy hover:bg-farm-brown hover:text-white transition-colors px-6 py-3 rounded-md font-medium;
+    @apply bg-farm-yellow text-farm-burgundy hover:bg-farm-brown hover:text-white transition-colors px-4 py-2 md:px-6 md:py-3 rounded-md font-medium;
   }
 }

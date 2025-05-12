@@ -16,15 +16,15 @@ const ProductCard = ({
 }) => {
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="bg-farm-yellow/20 p-6 flex justify-center">
-        <Icon className="h-16 w-16 text-farm-burgundy" />
+      <div className="bg-farm-yellow/20 p-4 md:p-6 flex justify-center">
+        <Icon className="h-12 w-12 md:h-16 md:w-16 text-farm-burgundy" />
       </div>
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-farm-brown mb-4">{description}</p>
-        <div className="flex justify-between items-center">
-          <span className="text-farm-burgundy font-bold text-lg">{price}</span>
-          <Button size="sm" className="bg-farm-burgundy hover:bg-farm-brown" onClick={() => window.location.href = "tel:+233555198194"}>
+      <div className="p-4 md:p-6">
+        <h3 className="text-lg md:text-xl font-bold mb-2">{title}</h3>
+        <p className="text-farm-brown text-sm md:text-base mb-4">{description}</p>
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 sm:gap-0">
+          <span className="text-farm-burgundy font-bold text-base md:text-lg">{price}</span>
+          <Button size="sm" className="bg-farm-burgundy hover:bg-farm-brown w-full sm:w-auto" onClick={() => window.location.href = "tel:+233555198194"}>
             <ShoppingCart className="h-4 w-4 mr-1" />
             Order Now
           </Button>
@@ -38,15 +38,15 @@ const ProductsSection = () => {
   return (
     <section id="products" className="section-padding bg-farm-yellow/10">
       <div className="container mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Products</h2>
-          <p className="max-w-2xl mx-auto text-farm-brown">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">Our Products</h2>
+          <p className="max-w-2xl mx-auto text-farm-brown text-sm md:text-base">
             We offer a variety of premium poultry products, from fresh meat to farm eggs and traditional Ghanaian dishes.
           </p>
-          <div className="w-24 h-1 bg-farm-burgundy mx-auto mt-4"></div>
+          <div className="w-16 md:w-24 h-1 bg-farm-burgundy mx-auto mt-3 md:mt-4"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           <ProductCard 
             icon={EggFried}
             title="Fresh Poultry Meat"
@@ -69,7 +69,7 @@ const ProductsSection = () => {
           />
         </div>
         
-        <div className="mt-10 text-center">
+        <div className="mt-8 md:mt-10 text-center">
           <Button className="bg-farm-burgundy hover:bg-farm-brown" onClick={() => window.location.href = "tel:+233555198194"}>
             Call to Order
           </Button>
