@@ -24,9 +24,9 @@ const ProductCard = ({
         <p className="text-farm-brown mb-4">{description}</p>
         <div className="flex justify-between items-center">
           <span className="text-farm-burgundy font-bold text-lg">{price}</span>
-          <Button size="sm" className="bg-farm-burgundy hover:bg-farm-brown">
+          <Button size="sm" className="bg-farm-burgundy hover:bg-farm-brown" onClick={() => window.location.href = "tel:+233555198194"}>
             <ShoppingCart className="h-4 w-4 mr-1" />
-            Add to Cart
+            Order Now
           </Button>
         </div>
       </div>
@@ -70,8 +70,8 @@ const ProductsSection = () => {
         </div>
         
         <div className="mt-10 text-center">
-          <Button className="bg-farm-burgundy hover:bg-farm-brown">
-            View All Products
+          <Button className="bg-farm-burgundy hover:bg-farm-brown" onClick={() => window.location.href = "tel:+233555198194"}>
+            Call to Order
           </Button>
         </div>
       </div>

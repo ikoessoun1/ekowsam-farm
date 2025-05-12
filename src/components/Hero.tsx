@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Egg } from 'lucide-react';
+import { Egg, Phone } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -10,18 +10,19 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Fresh Poultry Products from Our Farm to Your Table
+              Ekow Sam Farms: Quality Poultry Products
             </h1>
             <p className="text-lg text-farm-brown/90">
-              Discover our premium quality poultry meat, fresh eggs, and traditional Ghanaian delicacies.
+              Discover our premium quality poultry meat, fresh eggs, and traditional Ghanaian delicacies from our farm in Millennium City.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
-              <Button className="bg-farm-burgundy text-white hover:bg-farm-brown">
-                Explore Our Products
+              <Button className="bg-farm-burgundy text-white hover:bg-farm-brown" onClick={() => window.location.href = "tel:+233555198194"}>
+                <Phone className="mr-2 h-5 w-5" />
+                Order Now
               </Button>
-              <Button variant="outline" className="border-farm-burgundy text-farm-burgundy hover:bg-farm-burgundy hover:text-white">
+              <Button variant="outline" className="border-farm-burgundy text-farm-burgundy hover:bg-farm-burgundy hover:text-white" onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}>
                 <Egg className="mr-2 h-5 w-5" />
-                Try Nkosua Ne Mako
+                Our Products
               </Button>
             </div>
           </div>

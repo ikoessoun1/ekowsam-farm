@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { EggFried, Utensils, EggFried as Egg } from 'lucide-react';
+import { EggFried, Utensils, EggFried as Egg, Phone } from 'lucide-react';
 
 const FeaturedDish = () => {
   return (
@@ -44,8 +44,9 @@ const FeaturedDish = () => {
               </div>
             </div>
             
-            <Button className="bg-farm-yellow text-farm-burgundy hover:bg-white mt-4">
-              Order Now
+            <Button className="bg-farm-yellow text-farm-burgundy hover:bg-white mt-4" onClick={() => window.location.href = "tel:+233555198194"}>
+              <Phone className="mr-2 h-5 w-5" />
+              Call to Order
             </Button>
           </div>
           

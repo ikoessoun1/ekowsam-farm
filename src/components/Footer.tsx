@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -8,21 +8,23 @@ const Footer = () => {
       <div className="container mx-auto py-12 px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-serif font-bold text-white mb-4">
-              Farm<span className="text-farm-yellow">Fresh</span>
-            </h3>
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 bg-farm-yellow/50 flex items-center justify-center rounded-full">
+                <span className="text-farm-burgundy font-bold">ESF</span>
+              </div>
+              <h3 className="text-2xl font-serif font-bold text-white">
+                Ekow<span className="text-farm-yellow">Sam</span> Farms
+              </h3>
+            </div>
             <p className="text-white/80 mb-4">
-              Premium poultry products from our farm to your table. Committed to quality, flavor, and Ghanaian tradition.
+              Premium poultry products from our farm to your table. Committed to quality, flavor, and Ghanaian tradition since 2003.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
+                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -38,29 +40,27 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="font-bold text-farm-yellow mb-4">Newsletter</h4>
-            <p className="text-white/80 mb-4">
-              Subscribe to receive updates on new products and special offers.
-            </p>
-            <form className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email"
-                className="px-4 py-2 rounded-l-md w-full focus:outline-none text-farm-burgundy"
-              />
-              <button 
-                type="submit" 
-                className="bg-farm-yellow text-farm-burgundy px-4 py-2 rounded-r-md font-medium hover:bg-white transition-colors"
-              >
-                Subscribe
-              </button>
-            </form>
+            <h4 className="font-bold text-farm-yellow mb-4">Contact Information</h4>
+            <ul className="space-y-3">
+              <li className="flex items-center gap-2">
+                <MapPin className="h-5 w-5 text-farm-yellow" />
+                <span>25 Millennium City Street, Behind DL Hospital</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone className="h-5 w-5 text-farm-yellow" />
+                <a href="tel:+233555198194" className="hover:text-farm-yellow">+233 555 198 194</a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Mail className="h-5 w-5 text-farm-yellow" />
+                <a href="mailto:hello@ekowsamfarms.com" className="hover:text-farm-yellow">hello@ekowsamfarms.com</a>
+              </li>
+            </ul>
           </div>
         </div>
         
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
           <p className="text-white/60">
-            &copy; {new Date().getFullYear()} FarmFresh Poultry. All rights reserved.
+            &copy; {new Date().getFullYear()} Ekow Sam Farms. All rights reserved.
           </p>
         </div>
       </div>

@@ -9,9 +9,13 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <div className="flex items-center">
+        <div className="flex items-center gap-3">
+          {/* Logo placeholder */}
+          <div className="w-12 h-12 bg-farm-yellow/30 flex items-center justify-center rounded-full">
+            <span className="text-farm-burgundy font-bold text-xl">ESF</span>
+          </div>
           <span className="text-2xl font-serif font-bold text-farm-burgundy">
-            Farm<span className="text-farm-brown">Fresh</span>
+            Ekow<span className="text-farm-brown">Sam</span> Farms
           </span>
         </div>
         
@@ -33,7 +37,7 @@ const Navbar = () => {
           <a href="#about" className="text-farm-burgundy hover:text-farm-brown font-medium transition-colors">About</a>
           <a href="#products" className="text-farm-burgundy hover:text-farm-brown font-medium transition-colors">Products</a>
           <a href="#contact" className="text-farm-burgundy hover:text-farm-brown font-medium transition-colors">Contact</a>
-          <Button className="bg-farm-burgundy text-white hover:bg-farm-brown">Order Now</Button>
+          <Button className="bg-farm-burgundy text-white hover:bg-farm-brown" onClick={() => window.location.href = "tel:+233555198194"}>Order Now</Button>
         </div>
       </div>
       
@@ -44,7 +48,7 @@ const Navbar = () => {
           <a href="#about" className="text-farm-burgundy hover:text-farm-brown font-medium transition-colors">About</a>
           <a href="#products" className="text-farm-burgundy hover:text-farm-brown font-medium transition-colors">Products</a>
           <a href="#contact" className="text-farm-burgundy hover:text-farm-brown font-medium transition-colors">Contact</a>
-          <Button className="bg-farm-burgundy text-white hover:bg-farm-brown">Order Now</Button>
+          <Button className="bg-farm-burgundy text-white hover:bg-farm-brown" onClick={() => window.location.href = "tel:+233555198194"}>Order Now</Button>
         </div>
       </div>
     </nav>

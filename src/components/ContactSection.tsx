@@ -42,19 +42,19 @@ const ContactSection = () => {
             <ContactCard 
               icon={Home} 
               title="Farm Location" 
-              details="123 Farm Road, Accra, Ghana" 
+              details="25 Millennium City Street, Behind DL Hospital, Accra, Ghana" 
             />
             
             <ContactCard 
               icon={Phone} 
               title="Phone" 
-              details={<a href="tel:+233123456789" className="hover:text-farm-burgundy">+233 12 345 6789</a>} 
+              details={<a href="tel:+233555198194" className="hover:text-farm-burgundy">+233 555 198 194</a>} 
             />
             
             <ContactCard 
               icon={Mail} 
               title="Email" 
-              details={<a href="mailto:info@farmfresh.gh" className="hover:text-farm-burgundy">info@farmfresh.gh</a>} 
+              details={<a href="mailto:hello@ekowsamfarms.com" className="hover:text-farm-burgundy">hello@ekowsamfarms.com</a>} 
             />
             
             <ContactCard 
@@ -70,58 +70,32 @@ const ContactSection = () => {
             />
           </div>
           
-          <div className="bg-white p-8 rounded-xl shadow-md">
-            <h3 className="text-xl font-bold mb-6 text-farm-burgundy">Send Us a Message</h3>
-            <form className="space-y-4">
+          <div>
+            <div className="bg-white p-8 rounded-xl shadow-md mb-8">
+              <h3 className="text-xl font-bold mb-4 text-farm-burgundy">Direct Contact</h3>
+              <p className="mb-4">For the fastest response, please call us directly or visit our farm in Millennium City.</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-farm-brown mb-1">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-2 border border-farm-yellow/50 rounded-md focus:outline-none focus:ring-2 focus:ring-farm-burgundy"
-                  />
+                <Button className="w-full bg-farm-burgundy hover:bg-farm-brown" onClick={() => window.location.href = "tel:+233555198194"}>
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call Us Now
+                </Button>
+                <Button className="w-full bg-farm-yellow text-farm-burgundy hover:bg-farm-burgundy hover:text-white" onClick={() => window.location.href = "mailto:hello@ekowsamfarms.com"}>
+                  <Mail className="mr-2 h-5 w-5" />
+                  Send Email
+                </Button>
+              </div>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-md">
+              <h3 className="text-xl font-bold mb-4 text-farm-burgundy">Visit Our Farm</h3>
+              <p className="mb-4">Experience our sustainable farming practices firsthand and purchase fresh products directly from the source.</p>
+              <div className="aspect-video bg-farm-yellow/20 rounded-lg flex items-center justify-center">
+                <div className="text-center">
+                  <p className="font-medium">Map Placeholder</p>
+                  <p className="text-sm text-farm-brown">25 Millennium City Street, Behind DL Hospital</p>
                 </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-farm-brown mb-1">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-2 border border-farm-yellow/50 rounded-md focus:outline-none focus:ring-2 focus:ring-farm-burgundy"
-                  />
-                </div>
               </div>
-              
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-farm-brown mb-1">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="w-full px-4 py-2 border border-farm-yellow/50 rounded-md focus:outline-none focus:ring-2 focus:ring-farm-burgundy"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-farm-brown mb-1">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full px-4 py-2 border border-farm-yellow/50 rounded-md focus:outline-none focus:ring-2 focus:ring-farm-burgundy"
-                ></textarea>
-              </div>
-              
-              <Button type="submit" className="w-full bg-farm-burgundy hover:bg-farm-brown">
-                Send Message
-              </Button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
