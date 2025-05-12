@@ -51,7 +51,6 @@ const AboutSection = () => {
           </div>
         </div>
         
-        {/* Why Choose Us Section */}
         <div className="mt-12 md:mt-16">
           <div className="text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">Why Choose Us</h2>
