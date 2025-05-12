@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Chicken, Egg, EggFried, ShoppingCart } from 'lucide-react';
+import { EggFried, Egg as EggIcon, ShoppingCart } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 const ProductCard = ({ 
@@ -48,14 +48,14 @@ const ProductsSection = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ProductCard 
-            icon={Chicken}
+            icon={EggFried}
             title="Fresh Poultry Meat"
             description="Tender, organic poultry meat raised with care on our farm." 
             price="From GH₵ 55.00"
           />
           
           <ProductCard 
-            icon={Egg}
+            icon={EggIcon}
             title="Farm Fresh Eggs"
             description="Nutritious, large eggs from our free-range chickens."
             price="GH₵ 35.00 / dozen"

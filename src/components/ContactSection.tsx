@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Farm, MapPin, Phone, Mail } from 'lucide-react';
+import { Home, MapPin, Phone, Mail } from 'lucide-react';
 
 const ContactCard = ({ 
   icon: Icon, 
@@ -40,7 +40,7 @@ const ContactSection = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <ContactCard 
-              icon={Farm} 
+              icon={Home} 
               title="Farm Location" 
               details="123 Farm Road, Accra, Ghana" 
             />

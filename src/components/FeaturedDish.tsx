@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { EggFried, Utensils } from 'lucide-react';
+import { EggFried, Utensils, EggFried as Egg } from 'lucide-react';
 
 const FeaturedDish = () => {
   return (

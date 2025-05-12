@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Carrot, EggFried, Farm } from 'lucide-react';
+import { Carrot, EggFried, Home } from 'lucide-react';
 
 const AboutSection = () => {
   return (
@@ -26,7 +26,7 @@ const AboutSection = () => {
           
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-farm-yellow/20 p-6 rounded-xl text-center hover:bg-farm-yellow/40 transition-colors">
-              <Farm className="mx-auto text-farm-brown mb-4 h-12 w-12" />
+              <Home className="mx-auto text-farm-brown mb-4 h-12 w-12" />
               <h3 className="font-bold">Sustainable Farming</h3>
               <p className="text-sm mt-2">Environmentally conscious methods that respect nature</p>
             </div>
